@@ -9,9 +9,7 @@ namespace TT.Infra.Domain.Entities
     public sealed class Customer : Entity
     {
 
-        [Required]
         public string Name { get; private set; }
-        [Required]
         public string Email { get; private set; }
         public ICollection<Order> Orders { get; set; }
 

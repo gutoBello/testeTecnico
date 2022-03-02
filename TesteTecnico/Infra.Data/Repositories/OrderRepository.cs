@@ -26,7 +26,7 @@ namespace TesteTecnico.Infra.Data.Repositories
             return order;
         }
 
-        public async Task<Order> GetById(int id)
+        public async Task<Order> GetByIdAsync(int id)
         {
             return await _orderContext.Orders.Include(q => q.Customer).SingleOrDefaultAsync(o => o.Id == id);
         }

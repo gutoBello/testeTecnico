@@ -10,6 +10,6 @@ namespace TT.Infra.Domain.Interfaces
     {
         Order Create(Order order);
 
-        Task<Order> GetById(int id);
+        Task<Order> GetByIdAsync(int id);
     }
 }

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ks+QkIkt+YAkS4Xk/DsdyrqxtZUgw6XCOSUTPGFcKwRyTyJKg2nx7s2HWD6e2+6xbCPKUTwgXKHLqR81IGsp4w==",
+  "dgSpecHash": "w9mMNw6hPaBv7QF6q6lNSf4+GMlkMt11BtW0kAdhKBeVK3dRsHWRp3O4PD1YCyPjyrimnwjcZTRvO+nD8GZzgw==",
   "success": true,
   "projectFilePath": "C:\\Users\\guto_\\gustavoBelloIlia\\TesteTecnico\\TesteTecnico.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\guto_\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\guto_\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\guto_\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\guto_\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
