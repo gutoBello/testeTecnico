@@ -4,5 +4,15 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Util\Util.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Infra.Data\EntitiesConfiguration\" />
+    <Folder Include="Infra.Data\Identity\" />
+    <Folder Include="Infra.Data\Repositories\" />
+  </ItemGroup>
+
 
 </Project>

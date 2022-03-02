@@ -23,4 +23,5 @@ namespace TesteTecnico
                     webBuilder.UseStartup<Startup>();
                 });
     }
+
 }
