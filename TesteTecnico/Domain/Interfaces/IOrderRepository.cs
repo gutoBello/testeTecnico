@@ -9,5 +9,7 @@ namespace TT.Infra.Domain.Interfaces
     public interface IOrderRepository
     {
         Order Create(Order order);
+
+        Task<Order> GetById(int id);
     }
 }
