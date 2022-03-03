@@ -32,10 +32,10 @@ namespace TesteTecnico.Application.Services
             return _mapper.Map<IEnumerable<CustomerDTO>>(customersEntity);
         }
 
-        public async Task<CustomerDTO> GetByIdAsync(int id)
+        public async Task<CustomerWithOrdersDTO> GetByIdAsync(int id)
         {
             var customerEntity = await _customerRepository.GetByIdAsync(id);
-            return _mapper.Map<CustomerDTO>(customerEntity);
+            return _mapper.Map<CustomerWithOrdersDTO>(customerEntity);
         }
     }
 }

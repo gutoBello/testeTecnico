@@ -33,7 +33,7 @@ namespace TesteTecnico.Infra.Data.Repositories
 
         public async Task<Customer> GetByIdAsync(int id)
         {
-            return await _customerContext.Customers.FindAsync(id);
+            return await _customerContext.Customers.Include(c => c.Orders).FirstOrDefaultAsync(c => c.Id == id);
         }
     }
 }

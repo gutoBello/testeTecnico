@@ -9,7 +9,7 @@ namespace TesteTecnico.Application.Interfaces
 {
     public interface IOrderService
     {
-        OrderDTO Create(OrderDTO order);
+        CreateOrderDTO Create(CreateOrderDTO order);
 
         Task<OrderDTO> GetByIdAsync(int id);
     }

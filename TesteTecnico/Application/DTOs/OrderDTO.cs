@@ -13,7 +13,6 @@ namespace TesteTecnico.Application.DTOs
         public DateTime CreatedAt { get; set; }
         [Range(1, 999999)]
         public decimal Price { get; set; }
-        public Customer Customer { get; set; }
         [Range(1, int.MaxValue)]
         public int CustomerId { get; set; }
     }

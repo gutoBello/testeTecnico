@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "d4RgsxSrEI9qRzqAtQK9TQcTgou+hZKcKkTDeD2C4gt5Gw1/afUBGaI6FwxmehK/OGILwncyJ9iq2B0gF6QCaw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\guto_\\gustavoBelloIlia\\TesteTecnicoMSTest\\TesteTecnicoMSTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\guto_\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
+    "C:\\Users\\guto_\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
+    "C:\\Users\\guto_\\.nuget\\packages\\microsoft.net.test.sdk\\16.9.4\\microsoft.net.test.sdk.16.9.4.nupkg.sha512",
+    "C:\\Users\\guto_\\.nuget\\packages\\mstest.testadapter\\2.2.3\\mstest.testadapter.2.2.3.nupkg.sha512",
+    "C:\\Users\\guto_\\.nuget\\packages\\mstest.testframework\\2.2.3\\mstest.testframework.2.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

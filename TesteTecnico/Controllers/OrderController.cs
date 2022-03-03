@@ -22,7 +22,7 @@ namespace TesteTecnico.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddNewOrder([FromBody] OrderDTO orderDto)
+        public IActionResult AddNewOrder([FromBody] CreateOrderDTO orderDto)
         {
             _orderService.Create(orderDto);
             return CreatedAtAction(nameof(GetOrderById), new { Id = orderDto.Id }, orderDto);

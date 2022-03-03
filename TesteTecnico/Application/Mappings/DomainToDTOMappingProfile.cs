@@ -12,8 +12,10 @@ namespace TesteTecnico.Application.Mappings
     {
         public DomainToDTOMappingProfile()
         {
-            CreateMap<Customer, CustomerDTO>().ReverseMap();
+            CreateMap<Customer, CustomerDTO>().IgnoreAllSourcePropertiesWithAnInaccessibleSetter().ReverseMap();
+            CreateMap<Customer, CustomerWithOrdersDTO>().ReverseMap();
             CreateMap<Order, OrderDTO>().ReverseMap();
+            CreateMap<Order, CreateOrderDTO>().ReverseMap();
         }
     }
 }

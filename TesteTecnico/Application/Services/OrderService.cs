@@ -20,11 +20,11 @@ namespace TesteTecnico.Application.Services
             _mapper = mapper;
         }
 
-        public OrderDTO Create(OrderDTO order)
+        public CreateOrderDTO Create(CreateOrderDTO order)
         {
             var orderEntity = _mapper.Map<Order>(order);
             _orderRepository.Create(orderEntity);
-            return _mapper.Map<OrderDTO>(orderEntity);
+            return _mapper.Map<CreateOrderDTO>(orderEntity);
         }
 
         public async Task<OrderDTO> GetByIdAsync(int id)

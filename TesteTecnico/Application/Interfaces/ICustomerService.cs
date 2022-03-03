@@ -10,6 +10,6 @@ namespace TesteTecnico.Application.Interfaces
     {
         CustomerDTO Create(CustomerDTO customer);
         Task<IEnumerable<CustomerDTO>> GetAllAsync();
-        Task<CustomerDTO> GetByIdAsync(int id);
+        Task<CustomerWithOrdersDTO> GetByIdAsync(int id);
     }
 }

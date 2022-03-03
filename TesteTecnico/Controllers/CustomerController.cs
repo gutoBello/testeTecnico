@@ -37,7 +37,7 @@ namespace TesteTecnico.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCustomerById(int id)
         {
-            CustomerDTO customer = await _customerService.GetByIdAsync(id);
+            CustomerWithOrdersDTO customer = await _customerService.GetByIdAsync(id);
             if (customer != null)
                 return Ok(customer);
             else

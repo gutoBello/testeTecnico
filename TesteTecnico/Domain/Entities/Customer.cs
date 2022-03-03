@@ -21,7 +21,7 @@ namespace TT.Infra.Domain.Entities
         public Customer(int id, string name, string email)
         {
             Id = id;
-            DomainExceptionValidation.When(id <= 0, "Invalid Id");
+            DomainExceptionValidation.When(id < 0, "Invalid Id");
             ValidateDomain(name, email);
         }
 
@@ -39,7 +39,7 @@ namespace TT.Infra.Domain.Entities
 
             DomainExceptionValidation.When(string.IsNullOrEmpty(email), "Invalid email. Email is required");
             DomainExceptionValidation.When(email.Length < 10, "Invalid email. Minimum 10 charecters");
-            DomainExceptionValidation.When(Util.Validator.EmailValidator(email), "Invalid email.");
+            DomainExceptionValidation.When(!Util.Validator.EmailValidator(email), "Invalid email.");
 
             Email = email;
         }

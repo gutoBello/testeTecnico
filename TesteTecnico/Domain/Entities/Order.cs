@@ -12,28 +12,27 @@ namespace TT.Infra.Domain.Entities
         public decimal Price { get; private set; }
         public DateTime CreatedAt { get; private set; }
 
-        public Order(decimal price)
+        public Order(decimal price, int customerId)
         {
-            ValidateDomain(price);
+            ValidateDomain(price, customerId);
+            CreatedAt = DateTime.Now;
         }
 
-        public Order(int id, decimal price)
+        public Order(int id, decimal price, int customerId)
         {
-            DomainExceptionValidation.When(id <= 0, "Invalid Id");
             Id = id;
-            ValidateDomain(price);
+            ValidateDomain(price, customerId);
+            CreatedAt = DateTime.Now;
         }
 
-        public void Update(decimal price)
-        {
-            ValidateDomain(price);
-        }
 
-        private void ValidateDomain(decimal price)
+        private void ValidateDomain(decimal price, int customerId)
         {
             DomainExceptionValidation.When(price <= 0, "Invalid price. Must be greater than 0");
+            DomainExceptionValidation.When(customerId <= 0, "Invalid customer.");
 
             Price = price;
+            CustomerId = customerId;
         }
     }
 }
